@@ -51,8 +51,3 @@ Module.symvers
 Mkfile.old
 dkms.conf
 /.vs/
-/TurboHUDLauncher/release/TurboHUDLauncher.exe.manifest
-/TurboHUDLauncher/release/TurboHUDLauncher.exe.config
-/TurboHUDLauncher/release/TurboHUDLauncher.application
-/TurboHUDLauncher/bin/x64/Release
-/TurboHUDLauncher/obj/x64

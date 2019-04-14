@@ -1,0 +1,15 @@
+﻿<Window x:Class="TurboHUDLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TurboHUDLauncher"
+        mc:Ignorable="d" MinHeight="263" MinWidth="300"  MaxHeight="263" MaxWidth="300" Title="{StaticResource app_name}" Background="{StaticResource background_color}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid>
+        <Label Content="{DynamicResource app_name}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="272" FontSize="20" Margin="10,10,0,0" Foreground="{DynamicResource main_text_color}"/>
+        <TextBox x:Name="text_hud_path" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Height="43" Margin="62,50,0,0" TextWrapping="Wrap" Text="Choose the TurboHUD.exe" VerticalAlignment="Top" Width="220" Background="{DynamicResource background_color}" Foreground="{DynamicResource main_text_color}"/>
+        <Button Style="{DynamicResource NoMouseOverButtonStyle}"  x:Name="button_choose_hud" Content="Set" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="47" Height="43" Foreground="{DynamicResource main_text_color}" Background="{DynamicResource background_color}"/>
+        <Button Style="{DynamicResource NoMouseOverButtonStyle}" x:Name="button_start_stop_hud" Content="Start" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="272" Height="111" Background="{DynamicResource background_color}" Foreground="{DynamicResource main_text_color}" FontSize="24"/>
+        
+    </Grid>
+</Window>

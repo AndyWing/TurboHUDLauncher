@@ -1,0 +1,36 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TurboHUDLauncher"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:System.Window.Media="http://schemas.microsoft.com/netfx/2009/xaml/presentation" 
+             x:Class="TurboHUDLauncher.App"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <System:String x:Key="app_name">TurboHUDLauncher</System:String>
+        <System.Window.Media:Brush x:Key="main_text_color">#FFFFFFFF</System.Window.Media:Brush>
+        <System.Window.Media:Brush x:Key="background_color">#FF282828</System.Window.Media:Brush>
+        
+        <Style x:Key="NoMouseOverButtonStyle" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" 
+                            BorderThickness="1"
+                            BorderBrush="DarkGray"
+                            Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
