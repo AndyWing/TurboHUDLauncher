@@ -22,20 +22,6 @@
 *.la
 *.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
 # Debug files
 *.dSYM/
 *.su
@@ -51,8 +37,3 @@ Module.symvers
 Mkfile.old
 dkms.conf
 /.vs/
-/TurboHUDLauncher/release/TurboHUDLauncher.exe.manifest
-/TurboHUDLauncher/release/TurboHUDLauncher.exe.config
-/TurboHUDLauncher/release/TurboHUDLauncher.application
-/TurboHUDLauncher/bin/x64/Release
-/TurboHUDLauncher/obj/x64
